@@ -2,9 +2,9 @@
 #include "Common.h"
 #include "IniParser.h"
 
-
 int main()
 {
+    int key;
     CIniParser* IniParser = new CIniParser();
     IniParser->szFile = ExePath() + "\\Config.ini";
 
@@ -12,8 +12,8 @@ int main()
     {
         IniParser->WriteInt(std::to_string(7).c_str(), "bind", 32);
     }
-
-
-    int key = IniParser->ReadInt(std::to_string(7).c_str(), "bind");
+    key = IniParser->ReadInt(std::to_string(7).c_str(), "bind");
+    
+     std::cout << key << std::endl;
     return 0;
 }
