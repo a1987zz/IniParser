@@ -14,6 +14,6 @@ int main()
     }
     key = IniParser->ReadInt(std::to_string(7).c_str(), "bind");
     
-     std::cout << key << std::endl;
+    std::cout << key << std::endl;
     return 0;
 }
