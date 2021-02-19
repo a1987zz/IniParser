@@ -1,1 +1,1 @@
-# IniParser
+# IniParser С++
