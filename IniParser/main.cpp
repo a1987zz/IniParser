@@ -11,8 +11,8 @@ int main()
     if (!FileExists(IniParser->szFile))
     {
         IniParser->WriteInt(std::to_string(7).c_str(), "bind", 32);
-           IniParser->Write(std::to_string(7).c_str(), "login", "123");
-        IniParser->Write(std::to_string(7).c_str(), "password", "123");
+           IniParser->Write(std::to_string(7).c_str(), "login", "12abc3");
+        IniParser->Write(std::to_string(7).c_str(), "password", "12abc3");
     }
     key = IniParser->ReadInt(std::to_string(7).c_str(), "bind");
     char* keyss = _strdup(IniParser->ReadString(std::to_string(7).c_str(), "login").c_str());
