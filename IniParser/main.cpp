@@ -12,7 +12,7 @@ int main()
     {
         IniParser->WriteInt(std::to_string(7).c_str(), "bind", 32);
            IniParser->Write(std::to_string(7).c_str(), "login", "123abc");
-        IniParser->Write(std::to_string(7).c_str(), "password", "123abc");
+        IniParser->Write(std::to_string(7).c_str(), "password", "abc123abc");
     }
     key = IniParser->ReadInt(std::to_string(7).c_str(), "bind");
     char* keyss = _strdup(IniParser->ReadString(std::to_string(7).c_str(), "login").c_str());
