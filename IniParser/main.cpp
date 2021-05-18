@@ -2,6 +2,7 @@
 #include "Common.h"
 #include "IniParser.h"
 
+using namespace std;
 int main()
 {
     int key;
