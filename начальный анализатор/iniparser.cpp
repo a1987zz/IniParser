@@ -22,5 +22,6 @@ int main()
     std::cout << key << std::endl;
     std::cout << keyss << std::endl;
     std::cout << keye << std::endl;
+    system("pause");
     return 0;
 }
